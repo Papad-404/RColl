@@ -2,4 +2,8 @@
     <string name="app_name">Riddle Collection</string>
     <string name="rules1">Didalam Logical Quiz ini, pemain akan diberikan bertanyaan berupa teka-teki singkat dimana pemain harus menyelesaikan pertanyaan yang diajukan dengan batas maksimal waktu 30 detik.</string>
     <string name="rules2">Didalam Memory Quiz ini, pemain akan diberikan waktu 15 detik untuk mengingat gambar yang diberikan. Setelah waktu habis, pemain akan diajukan pertanyaan yang berkaitan dengan gambar yang diberikan.</string>
+    <string name="judul">Riddles Collection</string>
+    <string name="mulai">Start</string>
+    <string name="rules">Rules</string>
+    <string name="quit">Quit</string>
 </resources>
