@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/wllpaper2">
+
+    <LinearLayout
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFF"
+            android:textSize="22sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineSoal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/waktu"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/stermemori">
+
+        <TextView
+            android:id="@+id/tvSoal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#fff"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textSize="20sp"
+            android:text="Ini soal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linePilihanJawaban"
+        android:layout_width="392dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineSoal"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgPilihanJawaban"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:background="#D6EFF3"/>
+
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:background="#D6EFF3"/>
+
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:background="#D6EFF3"/>
+
+            <RadioButton
+                android:id="@+id/rbPilihanJawaban4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:background="#D6EFF3"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linePilihanJawaban"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="10dp"
+        android:background="#5ed76c"
+        android:text="SUBMIT" />
+</RelativeLayout>

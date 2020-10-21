@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wllpaper">
+
+    <LinearLayout
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="#FFFF"
+            android:textSize="22sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineGambar"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/waktu"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivGambar"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/stermemori"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineGambar"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/edtJawaban"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="Are You Ready?"
+            android:padding="10dp"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/readyyy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_forward_24" />
+    </LinearLayout>
+
+</RelativeLayout>
