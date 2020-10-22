@@ -28,6 +28,7 @@ public class SkorLogika extends AppCompatActivity {
             public void onClick(View view) {
                 Intent a = new Intent(SkorLogika.this, Home.class);
                 startActivity(a);
+                finish();
             }
         });
         mbtnretry.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +36,7 @@ public class SkorLogika extends AppCompatActivity {
             public void onClick(View view) {
                     Intent b = new Intent(SkorLogika.this, HomeLogika.class);
                     startActivity(b);
+                    finish();
                 }
         });
     }
@@ -48,5 +50,6 @@ public class SkorLogika extends AppCompatActivity {
         super.onBackPressed();
         Intent c = new Intent(SkorLogika.this, HomeLogika.class);
         startActivity(c);
+        finish();
     }
 }

@@ -32,6 +32,7 @@ public class TanyaMemori extends AppCompatActivity {
             public void onFinish() {
                 Intent i = new Intent(TanyaMemori.this, SettingMemori.class);
                 startActivity(i);
+                finish();
             }
         }.start();
 
@@ -51,5 +52,6 @@ public class TanyaMemori extends AppCompatActivity {
         super.onBackPressed();
         Intent hm = new Intent(TanyaMemori.this, HomeMemori.class);
         startActivity(hm);
+        finish();
     }
 }

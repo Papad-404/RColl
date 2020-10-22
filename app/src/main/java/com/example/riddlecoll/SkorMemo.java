@@ -28,6 +28,7 @@ public class SkorMemo extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(SkorMemo.this, Home.class);
                 startActivity(i);
+                finish();
             }
         });
         mbtnretry.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +36,7 @@ public class SkorMemo extends AppCompatActivity {
             public void onClick(View view) {
                 Intent a = new Intent(SkorMemo.this, HomeMemori.class);
                 startActivity(a);
+                finish();
             }
         });
     }
@@ -49,5 +51,6 @@ public class SkorMemo extends AppCompatActivity {
         super.onBackPressed();
         Intent c = new Intent(SkorMemo.this, HomeMemori.class);
         startActivity(c);
+        finish();
     }
 }

@@ -54,6 +54,7 @@ public class SettingMemori extends AppCompatActivity {
             Intent i = new Intent(SettingMemori.this, SkorMemo.class);
             i.putExtra("skormemori",jumlahSkor);
             startActivity(i);
+            finish();
         }else{
             mtvSoal.setText(memori.getPertanyaan(x));
             mrbPilihanJawaban1.setText(memori.getPilihanJawaban1(x));

@@ -21,6 +21,7 @@ public class HomeLogika extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HomeLogika.this, SettingLogika.class);
                 startActivity(intent);
+                finish();
             }
         });
     }
@@ -29,5 +30,6 @@ public class HomeLogika extends AppCompatActivity {
         super.onBackPressed();
         Intent lg = new Intent(HomeLogika.this, Home.class);
         startActivity(lg);
+        finish();
     }
 }

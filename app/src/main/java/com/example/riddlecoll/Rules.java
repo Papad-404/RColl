@@ -18,5 +18,6 @@ public class Rules extends AppCompatActivity {
         super.onBackPressed();
         Intent rule = new Intent(Rules.this, MainActivity.class);
         startActivity(rule);
+        finish();
     }
 }
