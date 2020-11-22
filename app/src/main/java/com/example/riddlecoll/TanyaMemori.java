@@ -46,12 +46,4 @@ public class TanyaMemori extends AppCompatActivity {
             }
         });
     }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent hm = new Intent(TanyaMemori.this, HomeMemori.class);
-        startActivity(hm);
-        finish();
-    }
 }
