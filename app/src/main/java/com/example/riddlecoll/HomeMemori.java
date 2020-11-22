@@ -21,7 +21,6 @@ public class HomeMemori extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(HomeMemori.this, TanyaMemori.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
@@ -31,6 +30,5 @@ public class HomeMemori extends AppCompatActivity {
         super.onBackPressed();
         Intent mm = new Intent(HomeMemori.this, Home.class);
         startActivity(mm);
-        finish();
     }
 }
