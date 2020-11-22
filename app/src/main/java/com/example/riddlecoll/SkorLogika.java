@@ -45,11 +45,4 @@ public class SkorLogika extends AppCompatActivity {
         String skorLogika = getIntent().getStringExtra("skorlogika");
         mtvHasilAkhir.setText("SKOR : "+skorLogika);
     }
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent c = new Intent(SkorLogika.this, HomeLogika.class);
-        startActivity(c);
-        finish();
-    }
 }
