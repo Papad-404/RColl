@@ -21,7 +21,6 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Home.this, HomeLogika.class));
-                finish();
             }
         });
         memori = findViewById(R.id.gmbrmemo);
@@ -29,7 +28,6 @@ public class Home extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(Home.this, HomeMemori.class));
-                finish();
             }
         });
     }
@@ -39,6 +37,5 @@ public class Home extends AppCompatActivity {
         super.onBackPressed();
         Intent home = new Intent(Home.this, MainActivity.class);
         startActivity(home);
-        finish();
     }
 }
