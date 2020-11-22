@@ -45,12 +45,4 @@ public class SkorMemo extends AppCompatActivity {
         String skorMemori = getIntent().getStringExtra("skormemori");
         mtvHasilAkhir.setText("SKOR : "+skorMemori);
     }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        Intent c = new Intent(SkorMemo.this, HomeMemori.class);
-        startActivity(c);
-        finish();
-    }
 }
